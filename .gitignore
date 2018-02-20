@@ -1,0 +1,5 @@
+# Vim
+*.swp
+
+# Dependency directories
+**/node_modules/**
