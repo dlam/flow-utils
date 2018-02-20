@@ -4,7 +4,8 @@
     "description": "",
     "main": "lib/FlowUtils.js",
     "scripts": {
-        "build": "rm -rf lib && flow-remove-types src -d lib && flow-copy-source src lib",
+        "build": "npm run clean && flow-remove-types src -d lib && flow-copy-source src lib",
+        "clean": "rm -rf lib",
         "flow": "flow",
         "lint": "eslint src"
     },
@@ -12,7 +13,7 @@
         "type": "git",
         "url": "git+https://github.com/dlam/flow-utils.git"
     },
-    "author": "",
+    "author": "Dustin Lam",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/dlam/flow-utils/issues"

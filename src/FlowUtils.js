@@ -34,8 +34,10 @@ function assertStringNullable(value: mixed): ?string {
     return value;
 }
 
-module.exports.mapToObject = mapToObject;
-module.exports.assertNotNull = assertNotNull;
-module.exports.assertBoolean = assertBoolean;
-module.exports.assertString = assertString;
-module.exports.assertStringNullable = assertStringNullable;
+module.exports = {
+    mapToObject,
+    assertNotNull,
+    assertBoolean,
+    assertString,
+    assertStringNullable
+}
