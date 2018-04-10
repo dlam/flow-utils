@@ -15,22 +15,22 @@ function mapToObject<V>(map: Map<string, V>): {
 }
 
 function assertNotNull<T>(value: ?T): T {
-    if (value == null) throw new Error(`Assert failure: Expected non-null but got ${typeof value === 'undefined' ? 'undefined' : 'null'}`);
+    if (value == null) { throw new Error(`Assert failure: Expected non-null but got ${typeof value === 'undefined' ? 'undefined' : 'null'}`); }
     return value;
 }
 
 function assertBoolean(value: mixed): boolean {
-    if (typeof value !== 'boolean') throw new Error(`Assert failure: Expected boolean but got ${typeof value}`);
+    if (typeof value !== 'boolean') { throw new Error(`Assert failure: Expected boolean but got ${typeof value}`); }
     return value;
 }
 
 function assertString(value: mixed): string {
-    if (typeof value !== 'string') throw new Error(`Assert failure: Expected string but got ${typeof value}`);
+    if (typeof value !== 'string') { throw new Error(`Assert failure: Expected string but got ${typeof value}`); }
     return value;
 }
 
 function assertStringNullable(value: mixed): ?string {
-    if (!(value == null || typeof value === 'string')) throw new Error(`Assert failure: Expected nullable string but got ${typeof value}`);
+    if (!(value == null || typeof value === 'string')) { throw new Error(`Assert failure: Expected nullable string but got ${typeof value}`); }
     return value;
 }
 
