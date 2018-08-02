@@ -24,6 +24,11 @@ function assertBoolean(value: mixed): boolean {
     return value;
 }
 
+function assertNumber(value: mixed): number {
+    if (typeof value !== 'number') { throw new Error(`Assert failure: Expected number but got ${typeof value}`); }
+    return value;
+}
+
 function assertString(value: mixed): string {
     if (typeof value !== 'string') { throw new Error(`Assert failure: Expected string but got ${typeof value}`); }
     return value;
