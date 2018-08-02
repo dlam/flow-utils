@@ -43,6 +43,7 @@ module.exports = {
     mapToObject,
     assertNotNull,
     assertBoolean,
+    assertNumber,
     assertString,
     assertStringNullable
 }
